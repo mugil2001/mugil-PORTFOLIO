@@ -1,0 +1,366 @@
+ *{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:url(abstract-digital-grid-black-background.jpg);
+}
+.main{
+      background: url(abstract-digital-grid-black-background.jpg);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size:cover ;
+        position: relative;
+        font-family: sans-serif;
+}
+
+.navebar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content:space-between;
+     
+}
+.navebar.logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+}
+ul{
+    margin-top: -4%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color:cyan;
+    margin-top: -3;
+    transition: 0.4s ease;
+}
+
+ul li a:hover{
+    color: rgb(248, 159, 35);
+}
+
+.info{
+    margin-left:7% ;
+    margin-top: 6%;
+}
+.info h2{
+    font-size: 65px;
+    color: antiquewhite;
+
+}
+.lnfo h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color:blanchedalmond;
+}
+#vaammugil{
+    font-size: 50px;
+    letter-spacing:2px;
+
+}
+.info span{
+    color: chocolate;
+}
+.info a{
+    text-decoration: none;
+    color:black;
+    background-color:greenyellow;
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+
+.info a:hover{
+    background:rgb(3, 196, 254)
+}
+.imag{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+.imag img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition:left 2s ease;
+}
+.imag:hover .mugil{
+    left: 55%;
+}
+.icons .a{
+    text-decoration: none;
+    color:mediumturquoise;
+}
+.icons ion-icon{
+    margin-left: 7%;
+    margin-right: -60px;
+    font-size: 40px;
+}
+.icons ion-icon:hover{
+    color: aqua;
+
+}
+/*---------------------------------about-----------------------------------*/
+#about{
+    padding: 80px 0;
+    color:#ababab;
+
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 40px;
+    font-weight: 550;
+    color: lightyellow;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right:50px ;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: gold;
+}
+.tab-links::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition:0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: aliceblue;
+}
+.tab-contents ul li span{
+    color:cyan;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+
+}
+/*-------------------------------------------project---------------------------------*/
+
+#project{
+    padding: 30px 0;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 15px;
+    transition: background 0.5s,transform0.5s;
+}
+.project-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+     
+}
+.project-list div h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.project-list div a{
+    text-decoration: none;
+    color: #fde2d3;
+    font-size: 12px;
+    margin-top:20px;
+    display: inline-block;
+}
+.project-list div:hover{
+    background: #e23a53;
+    transform:translateY(-10px);
+
+}
+/*---------------------------portfolio-------------------------------------------*/
+#portfolio{
+    padding:50px 0; 
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;
+
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background:linear-gradient(rgba(0,0,0,0.6),#f2ad64) ;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    font-size: 14px;
+    transition: height 0.5s;
+
+}
+.layer h3{
+    color: aqua;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.work:hover img{
+    transform:scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #f26356;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s ;
+}
+.btn:hover{
+    background-color: rgb(10, 255, 226);  
+}
+/*-----------------------------------contact---------------------------------------------------------*/
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: yellow;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+ width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline:none;
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    color:  #262626;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+
+}
+#msg{
+    color:  rgb(10, 255, 226);
+    margin-top: 10px;
+    display:block;
+
+}
+/*----------------------------------css for small screen--------------------------------------------------------------------------------*/
